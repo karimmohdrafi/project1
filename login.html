@@ -104,7 +104,7 @@
                     <input type="number" id="number" placeholder="Mobile Number">
                 </div>
             </div>
-            <center><button onclick="goforward()"><a href="./index.html" style="color: white;">Submit</a></button></center>
+            <center><button onclick="goforward()"><a href="./quiz.html" style="color: white;">Submit</a></button></center>
         </form>
     </div>
 </body>
@@ -114,19 +114,19 @@
 
 
 
-    function goforward() {
-        var first, last, email, number;
+    // function goforward() {
+    //     var first, last, email, number;
 
-        first = document.getElementById("first").value;
-        last = document.getElementById("last").value;
-        email = document.getElementById("email").value;
-        number = document.getElementById("number").value;
+    //     first = document.getElementById("first").value;
+    //     last = document.getElementById("last").value;
+    //     email = document.getElementById("email").value;
+    //     number = document.getElementById("number").value;
 
-        localStorage.setItem("first", first);
-        localStorage.setItem("last", last);
-        localStorage.setItem("email", email);
-        localStorage.setItem("number", number);
-    }
+    //     localStorage.setItem("first", first);
+    //     localStorage.setItem("last", last);
+    //     localStorage.setItem("email", email);
+    //     localStorage.setItem("number", number);
+    // }
 
     function goforward(){
         history.forward();
