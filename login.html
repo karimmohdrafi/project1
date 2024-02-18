@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register for quiz</title>
+    <script src="https://kit.fontawesome.com/0f0bbe0984.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            list-style: none;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin: 0;
+            padding: 0;
+
+        }
+
+        .box {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border: black solid 3px;
+            padding: 15px 60px;
+            border-radius: 20px;
+            background: linear-gradient(to top, lightgreen, white);
+        }
+
+        h2 {
+            color: blue;
+            margin-top: 5px;
+            text-align: center;
+
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .big {
+            padding: 10px;
+        }
+
+        button {
+            margin-top: 10px;
+            padding: 15px;
+            border-radius: 10px;
+        }
+
+        .big {
+            margin: 15px;
+            align-items: center;
+            display: flex;
+            border-radius: 3px;
+            max-height: 65px;
+
+        }
+        body {
+            background: url(./login1.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        input {
+            width: 100%;
+            background: transparent;
+            border: 0;
+            outline: 0;
+            padding: 10px;
+            
+        }
+
+        input i {
+            margin-left: 15px;
+           
+        }
+        button{
+            background-color: blue;
+            font-weight: bold;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <h2>Register Here</h2>
+        <form>
+            <div class="form">
+                <div class="big">
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" id="first" placeholder="First Name">
+                </div>
+                <div class="big">
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" id="last" placeholder="Last Name">
+                </div>
+                <div class="big">
+                    <i class="fa-solid fa-envelope"></i>
+                    <input type="email" id="email" placeholder="Email">
+                </div>
+                <div class="big">
+                    <i class="fa-solid fa-mobile"></i>
+                    <input type="number" id="number" placeholder="Mobile Number">
+                </div>
+            </div>
+            <center><button onclick="goforward()"><a href="./index.html" style="color: white;">Submit</a></button></center>
+        </form>
+    </div>
+</body>
+<script>
+
+    
+
+
+
+    function goforward() {
+        var first, last, email, number;
+
+        first = document.getElementById("first").value;
+        last = document.getElementById("last").value;
+        email = document.getElementById("email").value;
+        number = document.getElementById("number").value;
+
+        localStorage.setItem("first", first);
+        localStorage.setItem("last", last);
+        localStorage.setItem("email", email);
+        localStorage.setItem("number", number);
+    }
+
+    function goforward(){
+        history.forward();
+    }
+
+
+
+</script>
+
+</html>
