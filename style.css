@@ -18,8 +18,8 @@ body {
 }
 
 
-.result-container
-.quiz-container,
+
+.quiz-container,.result-container
 {
 background: url(./container1.jpg);
 background-repeat: no-repeat;
