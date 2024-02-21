@@ -21,10 +21,16 @@ h1 {
 
 .quiz-container,
 .result-container {
-    background-color: #fff;
+    background: url(./container1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     border-radius: 2%;
     box-shadow: 0 0 10px 2px rgba(100, 100, 100, 0.1);
     width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .quiz-header {
@@ -89,12 +95,12 @@ button {
 }
 
 .wrong {
-    background-color: #feb2b2;
+    background-color: red;
     padding: 0 20px;
 }
 
 .correct {
-    background-color: #74e5a5;
+    background-color: blue;
     padding: 0 20px;
 
 }
