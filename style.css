@@ -97,10 +97,12 @@ button {
 .wrong {
     background-color: red;
     padding: 0 20px;
+    border-radius: 10px;
 }
 
 .correct {
     background-color: blue;
     padding: 0 20px;
+    border-radius: 10px;
 
 }
