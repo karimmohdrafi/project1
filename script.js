@@ -252,7 +252,7 @@ submitBtn.addEventListener('click', () => {
         submitted = true
         quiz.style.display = "none";
         resultEle.style.display = "block";
-        scoreEle.innerHTML = `${score}/${quizData.length} questions answered correctly`
+        scoreEle.innerHTML = `${score}/${quizData.length} questions answered correctly.`
 
 
     }
